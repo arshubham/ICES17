@@ -361,11 +361,39 @@ video {
 }
 
 .nav-bg {
-	background: rgba(0,0,0, .6);
+    background: rgba(0, 0, 0, .6);
 }
 
-.navbar-nav > li > .dropdown-menu{
-    	background: rgba(0,0,0, .1);
+.caretup {
+    transform: rotate(180deg);
+}
+
+.navbar-nav > li > .dropdown-menu {
+    background: rgba(0, 0, 0, .3);
+    border-radius: 5px;
+}
+
+.dropdown-menu:before {
+    position: absolute;
+    top: -7px;
+    right: 12px;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+    border-left: 7px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.3);
+    content: '';
+}
+
+.dropdown-menu:after {
+    position: absolute;
+    top: -6px;
+    right: 10px;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid rgba(0,0,0, .5);
+    border-left: 6px solid transparent;
+    content: '';
 }
 
 .site-name {

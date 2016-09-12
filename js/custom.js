@@ -44,6 +44,17 @@ Backgroung slider
 //	}
 //})
 
+
+/* ----------------------------- 
+Reverse Caret Icon
+----------------------------- */
+
+ $(function(){
+    $(".dropdown").on("show.bs.dropdown hide.bs.dropdown", function(){
+      $(this).find(".caret").toggleClass("caretup");
+    });
+  });
+
 /* ----------------------------- 
 Scroll into viewPort Animation
 ----------------------------- */

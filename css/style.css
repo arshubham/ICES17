@@ -329,6 +329,22 @@ video {
     }
 }
 
+
+.play {
+    width: 12px;
+    height: 16px;
+    border-top: 8px solid transparent;
+    border-left: 12px solid #000;
+    border-bottom: 8px solid transparent;
+  
+}
+.pause {
+    width: 12px;
+    height: 16px;
+    border-right: 4px solid #000;
+    border-left: 4px solid #000;
+}
+
 /* --------------- Main Navigation Styles --------------- */
 .sticky-bar-wrap {
 	position:fixed;
@@ -346,6 +362,10 @@ video {
 
 .nav-bg {
 	background: rgba(0,0,0, .6);
+}
+
+.navbar-nav > li > .dropdown-menu{
+    	background: rgba(0,0,0, .1);
 }
 
 .site-name {
@@ -376,9 +396,9 @@ video {
 	z-index: 1025;
 }
 
-ul.nav > li > a {
+ul.nav > li > a, ul.dropdown-menu > li > a{
 	color:#fff;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 }
 

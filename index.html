@@ -46,10 +46,11 @@
 	<!--=== Header section Starts ===-->
 	<div id="header" class="header-section">
 
-        <video playsinline autoplay loop poster="polina.jpg" id="bgvid">
+        <video playsinline muted autoplay loop poster="polina.jpg" id="bgvid">
     <source src="Bugatti-Chiron-World-Premiere.webm" type="video/webm">
 <!--    <source src="polina.mp4" type="video/mp4">-->
 </video>
+        
 <!--[if lt IE 9]>
 <script>
 	document.createElement('video');
@@ -75,7 +76,15 @@
 						<div class="collapse navbar-collapse navbar-responsive-collapse">
 							<ul class="nav navbar-nav navbar-right">
 								<li class="current"><a href="#header">Home</a></li>
-								<li><a href="#">Workshops</a></li>
+					<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Workshops<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                                    </li>
 								<li><a href="#">Conference</a></li>
 								<li><a href="#">MUN</a></li>
 								<li><a href="#">Green Ideation</a></li>
@@ -100,10 +109,14 @@
 				<div class="row">
                     <div class="col-md-8 col-md-offset-2">
                     </div>
+<!--                    <div class="pause" id="vidpause" ></div>-->
+
                     <h3 class="pre-well-come">ASCE-VIT brings you</h3>
 					<h1 class="well-come">ICES'17</h1>
 					<div class="col-md-8 col-md-offset-2">
 						<p class="intro-message">10th - 13th March 2017 <br> VIT University, Vellore
+
+
 <!--
 						<div class="home-buttons">
 							<a href="#" class="fancy-button button-line button-white vertical">
@@ -123,6 +136,7 @@
 					</div>
 				</div>
 			</div>
+
 		</div>
 		<!--=== Home Section Ends ===-->
 	</div>

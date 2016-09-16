@@ -270,6 +270,7 @@ $(document).ready(function() {
 	$(window).bind('scroll', function(e) {
 		var scrollPos = $(window).scrollTop();
 		scrollPos > 220 ? $('.sticky-section').addClass('nav-bg') : $('.sticky-section').removeClass('nav-bg');
+		scrollPos > 220 ? document.getElementById('bgvid').get(0).pause() : document.getElementById('bgvid').pause();
 	});
 });				
 				

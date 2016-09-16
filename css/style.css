@@ -238,6 +238,10 @@ font-weight: 700;
 }
 
 
+body {
+    width: 100%;
+}
+
 
 /* --------------- Pre Loader Styles --------------- */
 #preloader {
@@ -263,6 +267,7 @@ font-weight: 700;
 	border-left: 2px solid rgba(0,0,0, 0);
 }
 
+
 /* =============== HTML element styles =============== */
 /* --------------- Button Styles --------------- */
 .button-line {
@@ -271,16 +276,17 @@ font-weight: 700;
 	font-weight: 400;
 	border-radius: 4px;
 	border: 1px solid;
-	margin: 10px;
+	margin: 5px;
 	overflow: visible;
+    
 }
 
 .no-text .icon {
-	margin: 0;
+	margin: 0px;
 }
 
 .btn .icon {
-	margin-left: 13px;
+	margin-left: 5px;
 }
 
 .button-white {
@@ -293,8 +299,16 @@ font-weight: 700;
 	color: #fff;
 }
 
+.social-icons > a  {
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
-
+/*Special padding for facebook button due to small width*/
+.social-icons > a:first-child  {
+    padding-right: 17px;
+    padding-left: 17px;
+}
 /* ================ Header Section ================ */
 
 .header-section {
@@ -363,7 +377,7 @@ video {
 	height: 80px;
 	z-index: 1025;
 	transition: all .3s ease-in;
-	background: rgba(0,0,0, .15);
+	background: rgba(0,0,0, 0.3);
 }
 
 .nav-bg {
@@ -408,6 +422,10 @@ video {
 	font-size: 24px;
 	padding: 8px 15px;
 	letter-spacing: 1px;
+    position: relative;
+    margin-bottom: 15px;
+    bottom:  15px;   
+
 }
 
 .site-name span {
@@ -420,6 +438,7 @@ video {
 	margin-right: 3px;
 	font-size: 28px;
 	line-height: 35px;
+    
 }
 
 .nav-hold {
@@ -450,6 +469,22 @@ color:#ccc !important;
 }
 
 
+#register-nav, #sign-in-nav {
+    border-style: solid;
+    border-width: thin;
+    border-color: #E74C3C;
+    
+}
+
+#register-nav {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+#sign-in-nav {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 /* --------------- Home section --------------- */
 
 
@@ -465,11 +500,14 @@ color:#ccc !important;
 	position:relative;
 	font-size: 50px;
 	line-height: 62px;
-	margin-bottom: 48px;
+	margin-bottom: 45px;
 	color:#fff !important;
 	font-weight: 700;
 	text-transform:uppercase;
     font-family: 'HumbleRoughtCaps', inherit;
+    font: 400 110px/0.8 'Great Vibes', Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
 }
 
 .well-come:after {
@@ -492,7 +530,7 @@ left: calc(50% - 110px);
 .pre-well-come {
 	position:relative;
 	font-size: 15px;
-	margin-top: 240px;
+	margin-top: 100px;
 	color:#fff !important;
 	text-transform:uppercase;
 }

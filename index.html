@@ -17,8 +17,9 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-    <link href= 'fonts/Humblle%20Rought%20Caps.otf' rel="stylesheet" type="text/css" /> 
-    <link href= 'fonts/Humblle%20Rought%20Caps.ttf' rel="stylesheet" type="text/css" /> 
+    <link href='fonts/Humblle%20Rought%20Caps.otf' rel="stylesheet" type="text/css" />
+    <link href='fonts/Humblle%20Rought%20Caps.otf' rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <!--=== Other CSS files ===-->
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/jquery.vegas.css" />
@@ -28,8 +29,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <!--=== Color Scheme, three colors are available red.css, orange.css and gray.css ===-->
-    <link rel="stylesheet" id="scheme-source" href="css/schemes/red.css" /
-          >
+    <link rel="stylesheet" id="scheme-source" href="css/schemes/red.css" />
     <!--=== Internet explorer fix ===-->
     <!-- [if lt IE 9]>
 		<script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -53,7 +53,7 @@
         <!--[if lt IE 9]>
             <script>
                 document.createElement('video');
-            </script>
+            </script>               
             <![endif]-->
         <!--== Header Video Ends ===-->
         <!-- sticky-bar Starts-->
@@ -63,13 +63,17 @@
                     <nav class="navbar" role="navigation">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                            <!--=== Site Name ===--><a class="site-name navbar-brand" href="#"><span>ASCE</span></a> </div>
+                            <!--=== Site Name ===-->
+                            <!--                            // Change it with logo icon-->
+                            <!--                                                            <img src="images/ICES.png" height="50px;" />-->
+                            <a class="site-name navbar-brand" href="#"> <img alt="Brand" src="images/ICES%20white%20png.png" width="120px"> </a>
+                        </div>
                         <!-- Main Navigation menu Starts -->
                         <div class="collapse navbar-collapse navbar-responsive-collapse">
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="current"><a href="#header">Home</a></li>
                                 <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Workshops<span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu animated" data-animation="fadeInUp" data-animation-delay="100">
                                         <li><a href="#">Workshop 1</a></li>
                                         <li><a href="#">Workshop 2</a></li>
                                         <li><a href="#">Workshop 3</a></li>
@@ -81,7 +85,7 @@
                                 </li>
                                 <li><a href="#">Conference</a></li>
                                 <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MUN<span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu animated" data-animation="fadeInUp" data-animation-delay="100">
                                         <li><a href="#">MUN 1</a></li>
                                         <li><a href="#">MUN 2</a></li>
                                         <li><a href="#">MUN 3</a></li>
@@ -92,8 +96,9 @@
                                 <li><a href="#">Green Ideation</a></li>
                                 <li><a href="#">Events</a></li>
                                 <li><a href="#">Schedule</a></li>
-                                <li><a href="#">Register</a></li>
-                                <li><a href="#">Sign-in</a></li>
+                                <li><a href="#">Extra </a></li>
+                                <li><a href="#" id="register-nav">Register</a></li>
+                                <li><a href="#" id="sign-in-nav">Sign-in</a></li>
                             </ul>
                         </div>
                         <!-- Main Navigation menu ends-->
@@ -110,23 +115,40 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2"> </div>
                     <!--                    <div class="pause" id="vidpause" ></div>-->
-                    <h3 class="pre-well-come">ASCE-VIT brings you</h3>
+                    <h3 class="pre-well-come">       
+                        <img alt="Brand" src="images/ICES%20white%20png.png" width="250px">
+                        <br>
+                        ASCE-VIT brings you</h3>
+                    <!--                    //Use fonts here-->
                     <h1 class="well-come">ICES'17</h1>
                     <div class="col-md-8 col-md-offset-2">
                         <p class="intro-message">10th - 13th March 2017
                             <br> VIT University, Vellore
-                            <!--
-						<div class="home-buttons"> <a href="#" class="fancy-button button-line button-white vertical">
+                            <div class="home-buttons"> <a href="#" class="fancy-button button-line button-white vertical">
 								Learn more
 								<span class="icon">
 									<i class="fa fa-gear"></i>
 								</span>
-							</a> <a href="#" class="fancy-button button-line button-white zoom">
+							</a> <span class="social-icons">
+                            <a target="_blank" href="https://www.facebook.com/ices17" class="fancy-button button-line button-white vertical">
+									<i class="fa fa-facebook"></i>
+							</a> 
+                            <a href="#" class="fancy-button button-line button-white vertical">
+									<i class="fa fa-twitter"></i>
+							</a> 
+                            <a href="#" class="fancy-button button-line button-white vertical">
+									<i class="fa fa-instagram"></i>
+							</a> 
+                            </span>
+                                <!--
+                            <a href="#" class="fancy-button button-line button-white zoom">
 								Download now
 								<span class="icon">
 									<i class="fa fa-leaf"></i>
 								</span>
-							</a> </div> --></div>
+							</a> 
+--></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -257,7 +279,7 @@
                 <div class="col-md-10 col-md-offset-1 center section-title">
                     <h3>About ICES</h3> </div>
                 <!-- Single Service Starts -->
-                <div class="col-md-6 col-sm-6 service animated" data-animation="fadeInLeft" data-animation-delay="700"> <span class="service-icon center"><i class="icon icon-basic-book-pencil fa-3x"></i></span>
+                <div class="col-md-6 col-sm-6 service animated" data-animation="fadeInLeft" data-animation-delay="200"> <span class="service-icon center"><i class="icon icon-basic-book-pencil fa-3x"></i></span>
                     <div class="service-desc">
                         <h4 class="service-title color-scheme">An Initiative</h4>
                         <p class="service-description justify"> An initiative by the American Society of Civil Engineers Indian Section, Vellore Institute of Technology hosts the first of its kind, international symposium on civil engineering. We bring you the finest, most advanced of symposiums, the likes of which has never been seen before. </p>
@@ -265,7 +287,7 @@
                 </div>
                 <!-- Single Service Ends -->
                 <!-- Single Service Starts -->
-                <div class="col-md-6 col-sm-6 service animated" data-animation="fadeInUp" data-animation-delay="700"> <span class="service-icon center"><i class="icon icon-basic-paperplane fa-3x"></i></span>
+                <div class="col-md-6 col-sm-6 service animated" data-animation="fadeInUp" data-animation-delay="200"> <span class="service-icon center"><i class="icon icon-basic-paperplane fa-3x"></i></span>
                     <div class="service-desc">
                         <h4 class="service-title color-scheme">We Offer The Best</h4>
                         <p class="service-description justify"> ASCE VIT (ISSR) presents you ICES 2016, a place where you can dream to think beyond. Events which rack your brain and takes you to a whole new level, workshops which will sweat information out of you, guest lectures from an array of highly decorated personalities, unconventional MUN’s and many others, await you. Enter this world of civil engineering and be lost in it. We promise you that you won’t regret it. </p>
@@ -273,7 +295,7 @@
                 </div>
                 <!-- Single Service ends -->
                 <!-- Single Service Starts -->
-                <div class="col-md-6 col-sm-6 service animated" data-animation="fadeInRight" data-animation-delay="700"> <span class="service-icon center"><i class="icon icon-basic-accelerator fa-3x"></i></span>
+                <div class="col-md-6 col-sm-6 service animated" data-animation="fadeInRight" data-animation-delay="200"> <span class="service-icon center"><i class="icon icon-basic-accelerator fa-3x"></i></span>
                     <div class="service-desc">
                         <h4 class="service-title color-scheme">Guest Lectures and Paper Presentations</h4>
                         <p class="service-description justify"> First and foremost, we have the brightest minds of our country, from various fields of engineering, coming over to deliver their bountiful wisdom in many guest lectures. An opportunity like that is not something you would come across every day! We have paper presentations on fields which cover Geotechnical, Environmental, Transportation and Structural. Papers are invited from all over the continent, class and quality is promised. Selected papers to be published in a journal. </p>
@@ -281,7 +303,7 @@
                 </div>
                 <!-- Single Service Ends -->
                 <!-- Single Service Starts -->
-                <div class="col-md-6 col-sm-6 service animated" data-animation="fadeInUp" data-animation-delay="700"> <span class="service-icon center"><i class="icon icon-basic-lightbulb fa-3x"></i></span>
+                <div class="col-md-6 col-sm-6 service animated" data-animation="fadeInUp" data-animation-delay="200"> <span class="service-icon center"><i class="icon icon-basic-lightbulb fa-3x"></i></span>
                     <div class="service-desc">
                         <h4 class="service-title color-scheme">Workshops</h4>
                         <p class="service-description justify"> We will be having many large scale workshops on topics like Seismic Design, Transportation, Geospatial Technology and Green Building Design and softwares like WaterGEMS, MicroStation and Primavera. An opportunity for participants to learn from Experts. </p>
@@ -294,7 +316,7 @@
     <!--=== Services section Ends ===-->
     <!--=== Step-1 section Starts ===-->
     <section id="step-1" class="section-step step-wrap">
-        <div class="container step animated" data-animation="bounceInLeft" data-animation-delay="700">
+        <div class="container step animated" data-animation="bounceInLeft" data-animation-delay="200">
             <div class="row">
                 <!-- Step Description Starts -->
                 <div class="col-md-8 step-desc">
@@ -302,7 +324,7 @@
                         <div class="step-no"> <span class="no-inner">1</span> </div>
                     </div>
                     <div class="col-md-10 step-details">
-                        <h3 class="step-title color-scheme">Work flow title here</h3>
+                        <h3 class="step-title color-scheme">About ASCE</h3>
                         <p class="step-description">Cillum laboris <strong>consequat</strong>, qui elit retro next level skateboard freegan hella. Cillum laboris consequat qui elit retro next level skateboard freegan hella. Cillum laboris consequat skateboard freegan hella</p>
                         <ul class="sub-steps">
                             <!-- Sub steps here -->
@@ -330,7 +352,7 @@
                         <div class="step-no"> <span class="no-inner">2</span> </div>
                     </div>
                     <div class="col-md-10 step-details">
-                        <h3 class="step-title color-scheme">Work flow title here</h3>
+                        <h3 class="step-title color-scheme">About VIT University</h3>
                         <p class="step-description">Cillum laboris <strong>consequat</strong>, qui elit retro next level skateboard freegan hella. Cillum laboris consequat qui elit retro next level skateboard freegan hella. Cillum laboris consequat skateboard freegan hella</p>
                         <ul class="sub-steps">
                             <!-- Sub steps here -->
@@ -341,7 +363,7 @@
                     <!-- End step-details -->
                 </div>
                 <!-- Step Description Ends -->
-                <div class="col-md-4 step-img"> <img src="images/desk.png" alt="" />
+                <div class="col-md-4 step-img"> <img src="images/vit.%20logo.png" alt="VIT University Logo" />
                     <!-- Step Photo Here -->
                 </div>
             </div>
@@ -351,7 +373,7 @@
     <!--=== Video section Starts ===-->
     <section id="section-video" class="section-video-wrap">
         <div class="section-overlay"></div>
-        <div class="container big-video center animated" data-animation="fadeInLeft" data-animation-delay="700">
+        <div class="container big-video center animated" data-animation="fadeInLeft" data-animation-delay="200">
             <div class="row">
                 <div class="col-md-12 section-title">
                     <h3>Describe with a video</h3> </div>
@@ -364,7 +386,7 @@
     <!--=== Video section Ends ===-->
     <!--=== ScreenShots section Starts ===-->
     <section id="section-screenshots" class="screenshots-wrap">
-        <div class="container screenshots animated" data-animation="fadeInUp" data-animation-delay="1000">
+        <div class="container screenshots animated" data-animation="fadeInUp" data-animation-delay="200">
             <div class="row porfolio-container">
                 <div class="col-md-10 col-md-offset-1 center section-title">
                     <h3>Our Latest Projects</h3> </div>
@@ -454,7 +476,7 @@
     <!--=== Testimonials section Starts ===-->
     <section id="section-testimonials" class="testimonials-wrap">
         <div class="section-overlay"></div>
-        <div class="container testimonials center animated" data-animation="rollIn" data-animation-delay="500">
+        <div class="container testimonials center animated" data-animation="rollIn" data-animation-delay="200">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="testimonial-slider">
@@ -490,137 +512,30 @@
         </div>
     </section>
     <!--=== Testimonials section Ends ===-->
-    <!--=== Pricing section Starts ===-->
-    <section id="section-pricing" class="pricing-wrap">
-        <div class="container pricing">
+    <!--=== Download section Starts ===-->
+    <section id="section-download" class="download-wrap">
+        <div class="container download center">
             <div class="row">
-                <div class="col-md-10 col-md-offset-1 center section-title">
-                    <h3>Plans & pricing</h3> </div>
-                <!-- Single Price Starts -->
-                <div class="col-md-3 col-sm-6 single-pricing-wrap center animated" data-animation="bounceInLeft" data-animation-delay="500">
-                    <div class="single-pricing">
-                        <div class="pricing-head">
-                            <h4 class="pricing-heading color-scheme">Basic</h4>
-                            <div class="price">
-                                <h3>
-									<span class="dollar">$</span>
-									40
-									<span class="month">/month</span>
-								</h3> </div>
-                        </div>
-                        <ul class="package-features">
-                            <li><span class="color-scheme fa fa-check"></span>Unlimited Downloads</li>
-                            <li><span class="color-scheme fa fa-check"></span>Unlimited Uploads</li>
-                            <li><span class="color-scheme fa fa-check"></span>Unlimited Email Accounts</li>
-                            <li><span class="color-scheme fa fa-check"></span>Email Forwards</li>
-                            <li><span class="color-scheme fa fa-close"></span>Cloud Storage</li>
-                            <li><span class="color-scheme fa fa-close"></span>Voice call</li>
-                            <li><span class="color-scheme fa fa-close"></span>Screen Share</li>
-                        </ul>
-                        <div class="sign-up"> <a href="#" class="fancy-button button-line btn-col zoom">
-								Sign up
-								<span class="icon">
-									<i class="fa fa-thumbs-o-up"></i>
-								</span>
-							</a> </div>
+                <div class="col-lg-12">
+                    <div class="col-md-10 col-md-offset-1 center section-title">
+                        <h3>Some Info Here</h3> </div>
+                    <div class="download-buttons clearfix">
+                        <!-- Download Buttons -->
+                        <a class="fancy-button button-line no-text btn-col large zoom" href="#" title="Download from App store"> <span class="icon">
+							<i class="fa fa-apple"></i>
+							</span> </a>
+                        <a class="fancy-button button-line btn-col no-text large zoom" href="#" title="Download from App store"> <span class="icon">
+							<i class="fa fa-android"></i>
+							</span> </a>
+                        <a class="fancy-button button-line btn-col no-text large zoom" href="#" title="Download from App store"> <span class="icon">
+							<i class="fa fa-windows"></i>
+							</span> </a>
                     </div>
                 </div>
-                <!-- Single Price Ends -->
-                <!-- Single Price Starts -->
-                <div class="col-md-3 col-sm-6 single-pricing-wrap center animated" data-animation="bounceInLeft" data-animation-delay="700">
-                    <div class="single-pricing best-pricing">
-                        <!-- this is best-pricing -->
-                        <div class="pricing-head">
-                            <h4 class="pricing-heading color-scheme">Advance</h4>
-                            <div class="price">
-                                <h3>
-									<span class="dollar">$</span>
-									60
-									<span class="month">/month</span>
-								</h3> </div>
-                        </div>
-                        <ul class="package-features">
-                            <li><span class="color-scheme fa fa-check"></span>Unlimited Downloads</li>
-                            <li><span class="color-scheme fa fa-check"></span>Unlimited Uploads</li>
-                            <li><span class="color-scheme fa fa-check"></span>Unlimited Email Accounts</li>
-                            <li><span class="color-scheme fa fa-check"></span>Email Forwards</li>
-                            <li><span class="color-scheme fa fa-check"></span>Cloud Storage</li>
-                            <li><span class="color-scheme fa fa-close"></span>Voice call</li>
-                            <li><span class="color-scheme fa fa-close"></span>Screen Share</li>
-                        </ul>
-                        <div class="sign-up"> <a href="#" class="fancy-button button-line btn-col vertical">
-								Sign up
-								<span class="icon">
-									<i class="fa fa-hand-o-up"></i>
-								</span>
-							</a> </div>
-                    </div>
-                </div>
-                <!-- Single Price Ends -->
-                <!-- Single Price Starts -->
-                <div class="col-md-3 col-sm-6 single-pricing-wrap center animated" data-animation="bounceInLeft" data-animation-delay="900">
-                    <div class="single-pricing">
-                        <div class="pricing-head">
-                            <h4 class="pricing-heading color-scheme">Premium</h4>
-                            <div class="price">
-                                <h3>
-									<span class="dollar">$</span>
-									80
-									<span class="month">/month</span>
-								</h3> </div>
-                        </div>
-                        <ul class="package-features">
-                            <li><span class="color-scheme fa fa-check"></span>Unlimited Downloads</li>
-                            <li><span class="color-scheme fa fa-check"></span>Unlimited Uploads</li>
-                            <li><span class="color-scheme fa fa-check"></span>Unlimited Email Accounts</li>
-                            <li><span class="color-scheme fa fa-check"></span>Email Forwards</li>
-                            <li><span class="color-scheme fa fa-check"></span>Cloud Storage</li>
-                            <li><span class="color-scheme fa fa-check"></span>Voice call</li>
-                            <li><span class="color-scheme fa fa-close"></span>Screen Share</li>
-                        </ul>
-                        <div class="sign-up"> <a href="#" class="fancy-button button-line btn-col rotate">
-								Sign up
-								<span class="icon">
-									<i class="fa fa-thumbs-o-up"></i>
-								</span>
-							</a> </div>
-                    </div>
-                </div>
-                <!-- Single Price Ends -->
-                <!-- Single Price Starts -->
-                <div class="col-md-3 col-sm-6 single-pricing-wrap center animated" data-animation="bounceInLeft" data-animation-delay="1100">
-                    <div class="single-pricing">
-                        <div class="pricing-head">
-                            <h4 class="pricing-heading color-scheme">Ultra</h4>
-                            <div class="price">
-                                <h3>
-									<span class="dollar">$</span>
-									100
-									<span class="month">/month</span>
-								</h3> </div>
-                        </div>
-                        <ul class="package-features">
-                            <li><span class="color-scheme fa fa-check"></span>Unlimited Downloads</li>
-                            <li><span class="color-scheme fa fa-check"></span>Unlimited Uploads</li>
-                            <li><span class="color-scheme fa fa-check"></span>Unlimited Email Accounts</li>
-                            <li><span class="color-scheme fa fa-check"></span>Email Forwards</li>
-                            <li><span class="color-scheme fa fa-check"></span>Cloud Storage</li>
-                            <li><span class="color-scheme fa fa-check"></span>Voice call</li>
-                            <li><span class="color-scheme fa fa-check"></span>Screen Share</li>
-                        </ul>
-                        <div class="sign-up"> <a href="#" class="fancy-button button-line btn-col zoom">
-								Sign up
-								<span class="icon">
-									<i class="fa fa-thumbs-o-up"></i>
-								</span>
-							</a> </div>
-                    </div>
-                </div>
-                <!-- Single Price Ends -->
             </div>
         </div>
     </section>
-    <!--=== Pricing section Ends ===-->
+    <!--=== Download section Ends ===-->
     <!--=== Subscribe section Starts ===-->
     <section id="section-subscribe" class="subscribe-wrap">
         <div class="section-overlay"></div>
@@ -642,34 +557,10 @@
         </div>
     </section>
     <!--=== Subscribe section Ends ===-->
-    <!--=== Download section Starts ===-->
-    <section id="section-download" class="download-wrap">
-        <div class="container download center">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="col-md-10 col-md-offset-1 center section-title">
-                        <h3>Download app</h3> </div>
-                    <div class="download-buttons clearfix">
-                        <!-- Download Buttons -->
-                        <a class="fancy-button button-line no-text btn-col large zoom" href="#" title="Download from App store"> <span class="icon">
-							<i class="fa fa-apple"></i>
-							</span> </a>
-                        <a class="fancy-button button-line btn-col no-text large zoom" href="#" title="Download from App store"> <span class="icon">
-							<i class="fa fa-android"></i>
-							</span> </a>
-                        <a class="fancy-button button-line btn-col no-text large zoom" href="#" title="Download from App store"> <span class="icon">
-							<i class="fa fa-windows"></i>
-							</span> </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--=== Download section Ends ===-->
     <!--=== Contact section Starts ===-->
     <section id="section-contact" class="contact-wrap">
         <div class="section-overlay"></div>
-        <div class="container contact center animated" data-animation="flipInY" data-animation-delay="1000">
+        <div class="container contact center animated" data-animation="flipInY" data-animation-delay="300">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="col-md-10 col-md-offset-1 center section-title">
@@ -699,20 +590,18 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h4 class="footer-title"><!-- Footer Title -->
-						<a class="site-name" href="#"><span>E</span>gret</a>
+						<a class="site-name" href="#"><span>A</span>SCE</a>
 					</h4>
                     <!-- Social Links -->
                     <div class="social-icons">
                         <ul>
                             <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
-                            <li><a href="#"><i class="fa fa-flickr"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-wikipedia-w"></i></a></li>
                         </ul>
                     </div>
-                    <p class="copyright">All rights reserved &copy; 2015</p>
+                    <p class="copyright">Shuabhm Arora, All rights reserved &copy; 2016</p>
                 </div>
             </div>
         </div>
